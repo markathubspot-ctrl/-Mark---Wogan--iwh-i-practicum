@@ -1,0 +1,25 @@
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        h1 Spaceships
+        a(href='/update-cobj') Add to this table
+        br
+        br
+        table(class='table')
+            thead
+                tr
+                    th Name
+                    th Crew Capacity
+                    th Max Speed
+                    th Origin Planet
+                    th Ship Class
+            tbody
+                each spaceship in data
+                    tr
+                        td #{spaceship.properties.name}
+                        td #{spaceship.properties.crew_capacity}
+                        td #{spaceship.properties.max_speed}
+                        td #{spaceship.properties.origin_planet}
+                        td #{spaceship.properties.ship_class}

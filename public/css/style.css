@@ -56,3 +56,42 @@ input[type="submit"] {
     padding: .375rem 1rem;
     margin-top: 10px;
 }
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 1rem;
+}
+
+th, td {
+    border: 1px solid lightgrey;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff7a59;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+a {
+    display: inline-block;
+    margin: 1rem;
+    color: #ff7a59;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #ff7a59;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}

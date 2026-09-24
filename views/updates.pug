@@ -1,0 +1,37 @@
+html
+    head
+        title #{title}
+        link(rel='stylesheet', href='/css/style.css')
+    body
+        h1 Add a New Spaceship
+        a(href='/') Return to the homepage
+        br
+        br
+        div(class='form-wrapper')
+            form(method='POST' action='/update-cobj')
+                label Name
+                br
+                input(type='text' name='name')
+                br
+                br
+                label Crew Capacity
+                br
+                input(type='text' name='crew_capacity')
+                br
+                br
+                label Max Speed
+                br
+                input(type='text' name='max_speed')
+                br
+                br
+                label Origin Planet
+                br
+                input(type='text' name='origin_planet')
+                br
+                br
+                label Ship Class
+                br
+                input(type='text' name='ship_class')
+                br
+                br
+                button(type='submit') Submit
